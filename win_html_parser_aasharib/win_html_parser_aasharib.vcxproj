@@ -88,6 +88,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -145,12 +146,80 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="targetver.h" />
-  </ItemGroup>
-  <ItemGroup>
+    <ClCompile Include="..\..\..\source\myhtml\callback.c" />
+    <ClCompile Include="..\..\..\source\myhtml\charef.c" />
+    <ClCompile Include="..\..\..\source\myhtml\data_process.c" />
+    <ClCompile Include="..\..\..\source\myhtml\encoding.c" />
+    <ClCompile Include="..\..\..\source\myhtml\encoding_detect.c" />
+    <ClCompile Include="..\..\..\source\myhtml\incoming.c" />
+    <ClCompile Include="..\..\..\source\myhtml\myhtml.c" />
+    <ClCompile Include="..\..\..\source\myhtml\mynamespace.c" />
+    <ClCompile Include="..\..\..\source\myhtml\myosi.c" />
+    <ClCompile Include="..\..\..\source\myhtml\mystring.c" />
+    <ClCompile Include="..\..\..\source\myhtml\parser.c" />
+    <ClCompile Include="..\..\..\source\myhtml\perf.c" />
+    <ClCompile Include="..\..\..\source\myhtml\rules.c" />
+    <ClCompile Include="..\..\..\source\myhtml\serialization.c" />
+    <ClCompile Include="..\..\..\source\myhtml\stream.c" />
+    <ClCompile Include="..\..\..\source\myhtml\tag.c" />
+    <ClCompile Include="..\..\..\source\myhtml\tag_init.c" />
+    <ClCompile Include="..\..\..\source\myhtml\thread.c" />
+    <ClCompile Include="..\..\..\source\myhtml\token.c" />
+    <ClCompile Include="..\..\..\source\myhtml\tokenizer.c" />
+    <ClCompile Include="..\..\..\source\myhtml\tokenizer_doctype.c" />
+    <ClCompile Include="..\..\..\source\myhtml\tokenizer_end.c" />
+    <ClCompile Include="..\..\..\source\myhtml\tokenizer_script.c" />
+    <ClCompile Include="..\..\..\source\myhtml\tree.c" />
+    <ClCompile Include="..\..\..\source\myhtml\utils.c" />
+    <ClCompile Include="..\..\..\source\myhtml\utils\avl_tree.c" />
+    <ClCompile Include="..\..\..\source\myhtml\utils\mchar_async.c" />
+    <ClCompile Include="..\..\..\source\myhtml\utils\mcobject.c" />
+    <ClCompile Include="..\..\..\source\myhtml\utils\mcobject_async.c" />
+    <ClCompile Include="..\..\..\source\myhtml\utils\mcsimple.c" />
+    <ClCompile Include="..\..\..\source\myhtml\utils\mcsync.c" />
+    <ClCompile Include="..\..\..\source\myhtml\utils\mctree.c" />
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="win_html_parser_aasharib.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\source\myhtml\api.h" />
+    <ClInclude Include="..\..\..\source\myhtml\api_encoding.h" />
+    <ClInclude Include="..\..\..\source\myhtml\callback.h" />
+    <ClInclude Include="..\..\..\source\myhtml\charef.h" />
+    <ClInclude Include="..\..\..\source\myhtml\charef_resource.h" />
+    <ClInclude Include="..\..\..\source\myhtml\data_process.h" />
+    <ClInclude Include="..\..\..\source\myhtml\def.h" />
+    <ClInclude Include="..\..\..\source\myhtml\encoding.h" />
+    <ClInclude Include="..\..\..\source\myhtml\encoding_detect_resource.h" />
+    <ClInclude Include="..\..\..\source\myhtml\encoding_resource.h" />
+    <ClInclude Include="..\..\..\source\myhtml\incoming.h" />
+    <ClInclude Include="..\..\..\source\myhtml\myhtml.h" />
+    <ClInclude Include="..\..\..\source\myhtml\mynamespace.h" />
+    <ClInclude Include="..\..\..\source\myhtml\mynamespace_resource.h" />
+    <ClInclude Include="..\..\..\source\myhtml\myosi.h" />
+    <ClInclude Include="..\..\..\source\myhtml\mystring.h" />
+    <ClInclude Include="..\..\..\source\myhtml\parser.h" />
+    <ClInclude Include="..\..\..\source\myhtml\rules.h" />
+    <ClInclude Include="..\..\..\source\myhtml\serialization.h" />
+    <ClInclude Include="..\..\..\source\myhtml\stream.h" />
+    <ClInclude Include="..\..\..\source\myhtml\tag.h" />
+    <ClInclude Include="..\..\..\source\myhtml\tag_const.h" />
+    <ClInclude Include="..\..\..\source\myhtml\thread.h" />
+    <ClInclude Include="..\..\..\source\myhtml\token.h" />
+    <ClInclude Include="..\..\..\source\myhtml\tokenizer.h" />
+    <ClInclude Include="..\..\..\source\myhtml\tokenizer_doctype.h" />
+    <ClInclude Include="..\..\..\source\myhtml\tokenizer_end.h" />
+    <ClInclude Include="..\..\..\source\myhtml\tokenizer_script.h" />
+    <ClInclude Include="..\..\..\source\myhtml\tree.h" />
+    <ClInclude Include="..\..\..\source\myhtml\utils.h" />
+    <ClInclude Include="..\..\..\source\myhtml\utils\avl_tree.h" />
+    <ClInclude Include="..\..\..\source\myhtml\utils\mchar_async.h" />
+    <ClInclude Include="..\..\..\source\myhtml\utils\mcobject.h" />
+    <ClInclude Include="..\..\..\source\myhtml\utils\mcobject_async.h" />
+    <ClInclude Include="..\..\..\source\myhtml\utils\mcsimple.h" />
+    <ClInclude Include="..\..\..\source\myhtml\utils\mcsync.h" />
+    <ClInclude Include="..\..\..\source\myhtml\utils\mctree.h" />
+    <ClInclude Include="..\..\..\source\myhtml\utils\resources.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
